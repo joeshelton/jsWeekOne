@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 Bottles of Beer</title>
+</head>
+<body>
+<p id="startingNumber"></p>
+
+    <script>
+        let startingNumber = prompt('How many bottles of beer are on the wall?');
+        console.log('startingNumber', startingNumber);
+
+        let startingNumberElement = document.getElementById("startingNumber");
+        console.log('startingNumberElement', startingNumber);
+
+        startingNumberElement.innerText = `${startingNumber} bottles of beer on the wall`;
+
+        repeatPTag = document.createElement('p');
+        repeatPTag.innerText = `${startingNumber} bottles of beer`;
+
+        takeOneDownPTag = document.createElement('p');
+        takeOneDownPTag.innerText = `Take one down, pass it around`;
+        
+        startingNumber--
+        let remaingBeer = (startingNumber); 
+        console.log('remaingBeer', remaingBeer);
+
+        newPTag = document.createElement('p');
+        newPTag.innerText = `${remaingBeer} bottles of beer on the wall`;
+
+        startingNumberElement.append(repeatPTag);
+        startingNumberElement.append(takeOneDownPTag);
+        startingNumberElement.append(newPTag);
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
