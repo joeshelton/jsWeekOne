@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <p id="shoppinglist"></p>
+    <script>
+        let shoppinglist = []
+        
+        shoppinglist.push('milk');
+        shoppinglist.push('bread');
+        shoppinglist.push('eggs');
+        shoppinglist.push('butter');
+        shoppinglist.push('cheese');
+
+        let shoppinglistElement = document.getElementById("shoppinglist");
+        console.log('shoppinglistElement', shoppinglistElement);
+
+        shoppinglistElement.innerText = `Item #1: ${shoppinglist[0]}`, `Item #2: ${shoppinglist[1]}`, `Item #3: ${shoppinglist[2]}`, `Item #4: ${shoppinglist[3]}`, `Item #5: ${shoppinglist[4]}`;
+
+    </script>
+</body>
+</html>
